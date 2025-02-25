@@ -1,0 +1,178 @@
+/* Styles de base */
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    min-height: 500vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Empêche le débordement horizontal */
+}
+
+.brand-container {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center; /* Centre le contenu verticalement */
+}
+
+/* Réglages de taille de logo */
+/* Ajustement de la taille du logo en pourcentage pour mieux gérer les redimensionnements */
+.logo {
+    width: 100%; /* Le logo prend toute la largeur de son conteneur */
+    max-width: 400px; /* Limite la taille maximale à 400px */
+    height: auto; /* Maintient les proportions */
+    transition: transform 0.3s ease;
+}
+
+/* Pour les écrans moyens (tablettes) */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 300px; /* Réduit la taille maximale sur tablettes */
+    }
+}
+
+/* Pour les petits écrans (mobiles) */
+@media (max-width: 480px) {
+    .logo {
+        max-width: 80px; /* Réduit encore la taille maximale sur les petits écrans */
+    }
+}
+
+.company-name {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Accessibilité */
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar .btn {
+        margin: 0 0;
+        padding: 8px;
+    }
+
+    form .col-md-6 {
+        margin-bottom: 15px;
+    }
+}
+
+/* RGPD */
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+/* Tableaux */
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Navigation active */
+.navbar .btn[href="clients.html"],
+.navbar .btn[href="prospects.html"] {
+    background-color: #495057;
+    border-color: #343a40;
+}
+
+/* Assurer que le body occupe toute la hauteur de la page et applique un layout flex */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* Sections du footer avec des espacements */
+footer h6, footer p {
+    margin: 2rem 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Assurer que le body occupe toute la hauteur de la page et applique un layout flex */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1; /* Permet au contenu de grandir et pousser le footer en bas */
+}
+
+/* Footer bien étalé et en bas */
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Pour s'assurer que le footer reste bien en bas même sur les petits écrans */
+@media (max-width: 790px) {
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
