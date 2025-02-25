@@ -1,0 +1,28 @@
+@import "node_modules/bootstrap/less/bootstrap.less";
+
+.map-container {
+    height: 300px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.weather-info {
+    padding: 15px;
+    background: #e9ecef;
+    border-radius: 8px;
+}
+
+.form-section {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .btn-sm {
+        margin: 2px 0;
+    }
+}
